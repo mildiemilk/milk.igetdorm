@@ -1,0 +1,75 @@
+.bg{
+    background-color: #efefef;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    background-color: #efefef;
+}
+.space { padding-top: 50px; }
+
+.navbar-default .navbar-nav > li > a {
+    color: #828282;
+    font-family: 'Kanit', sans-serif;
+}
+.txtb {
+    color: #d3d3d3;
+    font-family: 'Kanit', sans-serif;
+}
+.txt{
+    font-family: 'Kanit', sans-serif;
+}
+.logo{
+    max-width: 90%;
+    margin-top: 25%;
+}
+.form-control::-moz-placeholder {
+    color: #d3d3d3;
+    text-align: center;
+}
+.form-control:-ms-input-placeholder {
+    color: #d3d3d3;
+    text-align: center;
+}
+.form-control::-webkit-input-placeholder {
+    color: #d3d3d3;
+    text-align: center;
+}
+.input-group-btn > .hidden-xs > .btn-default:hover {
+    color: #d3d3d3;
+    background-color: white;
+}
+.input-group-btn >  .hidden-xs > .btn-default:focus,
+.input-group-btn >  .hidden-xs > .btn-default.focus {
+    color: #d3d3d3;
+    background-color: white;
+    border-color: #8c8c8c;
+}
+.input-group-btn >  .hidden-xs > .btn-default:active,
+.input-group-btn >  .hidden-xs > .btn-default.active,
+.input-group-btn >  .hidden-xs > .open > .dropdown-toggle.btn-default {
+    color: #d3d3d3;
+    background-color: white;
+    border-color: #adadad;
+}
+.input-group-btn >  .hidden-xs > .btn-default:active:hover,
+.input-group-btn >  .hidden-xs > .btn-default.active:hover,
+.input-group-btn >  .hidden-xs > .open > .dropdown-toggle.btn-default:hover,
+.input-group-btn >  .hidden-xs > .btn-default:active:focus,
+.input-group-btn >  .hidden-xs > .btn-default.active:focus,
+.input-group-btn >  .hidden-xs > .open > .dropdown-toggle.btn-default:focus,
+.input-group-btn >  .hidden-xs > .btn-default:active.focus,
+.input-group-btn >  .hidden-xs > .btn-default.active.focus,
+.input-group-btn >  .hidden-xs > .open > .dropdown-toggle.btn-default.focus {
+    color: #d3d3d3;
+    background-color: white;
+    border-color: #8c8c8c;
+}
+.div_shadow {
+    box-shadow: 5px 5px 8px #d8d8d8;
+    -webkit-box-shadow: 5px 5px 8px #d8d8d8;
+    -moz-box-shadow: 5px 5px 8px #d8d8d8;
+}
