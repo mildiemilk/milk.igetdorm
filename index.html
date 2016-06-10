@@ -312,9 +312,16 @@
                                 <input type="text" class="form-control txt input-lg"
                                        style="color: #828282;  max-width: 40%; border-radius: 0px;"
                                        value="พระจอมเกล้าลาดกระบัง" readonly>
+<<<<<<< HEAD
                                 <input id="myImg" type="text" class="form-control txt input-lg text-center"
                                        style="color: #828282;  max-width: 20%; border-radius: 0px;"
                                        value="โซนหอพัหหหก">
+=======
+                                <input type="text" class="form-control txt input-lg text-center zone"
+                                       style="color: #828282;  max-width: 20%; border-radius: 0px;"
+                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" >
+
+>>>>>>> c26c95bbd95ae2db63a009d40936a91bb5cee37a
                                 <select class="form-control txtb input-lg" style="max-width: 25%; border-radius: 0px;">
                                     <option>ราคา</option>
                                     <option>1000-2000</option>
@@ -332,6 +339,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
 
         <div id="myModal1" class="modal">
             <span class="close">×</span>
@@ -339,9 +347,60 @@
             <div id="caption"></div>
         </div>
 
+=======
+>>>>>>> c26c95bbd95ae2db63a009d40936a91bb5cee37a
     </div>
 </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalZone" tabindex="-1" role="dialog"
+     aria-labelledby="modalZoneLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalZoneLabel">โซนหอพัก</h4>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <button type="button" class="list-group-item z1">เกกี</button>
+                    <button type="button" class="list-group-item z2">RNP</button>
+                    <button type="button" class="list-group-item z3">จินดา</button>
+                    <button type="button" class="list-group-item z4">ริมสวน</button>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.z1').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('เกกี');
+            });
+    $('.z2').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('RNP');
+            });
+    $('.z3').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('จินดา');
+            });
+    $('.z4').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('ริมสวน');
+            });
+</script>
 
 </body>
 </html>
