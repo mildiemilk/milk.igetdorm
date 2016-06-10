@@ -8,12 +8,39 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/css1.css">
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+
     <link rel="icon" type="image/png" href="https://www.igetdorm.com/public/images/favicon/favicon.png">
     <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
     <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://www.igetdorm.com/public/css/font.css" rel="stylesheet">
+
+    <!-- SVG StyleSheet CSS -->
+    <!-- Widget CSS -->
+    <link href="https://www.igetdorm.com/public/css/widget.css" rel="stylesheet">
+    <!-- Typography CSS -->
+    <link href="https://www.igetdorm.com/public/css/typography.css" rel="stylesheet">
+    <!-- Shortcodes CSS -->
+    <link href="https://www.igetdorm.com/public/css/shortcodes.css" rel="stylesheet">
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="https://www.igetdorm.com/public/css/style.css" rel="stylesheet">
+    <!-- Color CSS -->
+    <link href="https://www.igetdorm.com/public/css/color.css" rel="stylesheet">
+    <!-- Effects CSS -->
+    <link href="https://www.igetdorm.com/public/css/effects.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="https://www.igetdorm.com/public/css/responsive.css" rel="stylesheet">
+    <link href="https://www.igetdorm.com/public/css/mainmodify.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/rating.min.css">
+    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/card.min.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
     <script type="text/javascript">
         /* <![CDATA[ */
         var _gaq = _gaq || [];
@@ -62,29 +89,30 @@
         /* ]]> */
     </script>
 
-    <link href="https://www.igetdorm.com/public/css/font.css" rel="stylesheet">
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal1');
 
-    <!-- SVG StyleSheet CSS -->
-    <!-- Widget CSS -->
-    <link href="https://www.igetdorm.com/public/css/widget.css" rel="stylesheet">
-    <!-- Typography CSS -->
-    <link href="https://www.igetdorm.com/public/css/typography.css" rel="stylesheet">
-    <!-- Shortcodes CSS -->
-    <link href="https://www.igetdorm.com/public/css/shortcodes.css" rel="stylesheet">
-    <!-- Custom Main StyleSheet CSS -->
-    <link href="https://www.igetdorm.com/public/css/style.css" rel="stylesheet">
-    <!-- Color CSS -->
-    <link href="https://www.igetdorm.com/public/css/color.css" rel="stylesheet">
-    <!-- Effects CSS -->
-    <link href="https://www.igetdorm.com/public/css/effects.css" rel="stylesheet">
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
 
-    <!-- Responsive CSS -->
-    <link href="https://www.igetdorm.com/public/css/responsive.css" rel="stylesheet">
-    <link href="https://www.igetdorm.com/public/css/mainmodify.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/bootstrap-slider.min.css">
-    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/rating.min.css">
-    <link rel="stylesheet" href="https://www.igetdorm.com/public/css/card.min.css">
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
 
 </head>
 <body>
@@ -284,9 +312,9 @@
                                 <input type="text" class="form-control txt input-lg"
                                        style="color: #828282;  max-width: 40%; border-radius: 0px;"
                                        value="พระจอมเกล้าลาดกระบัง" readonly>
-                                <input type="text" class="form-control txt input-lg text-center"
+                                <input id="myImg" type="text" class="form-control txt input-lg text-center"
                                        style="color: #828282;  max-width: 20%; border-radius: 0px;"
-                                       value="โซนหอพัก" >
+                                       value="โซนหอพัหหหก">
                                 <select class="form-control txtb input-lg" style="max-width: 25%; border-radius: 0px;">
                                     <option>ราคา</option>
                                     <option>1000-2000</option>
@@ -303,6 +331,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="myModal1" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
 
     </div>
