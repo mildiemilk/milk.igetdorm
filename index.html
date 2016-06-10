@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +42,31 @@
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
         //<![CDATA[
-        try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1465369791,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"8d1a3b21ed3ea9d1d47bab05d4408d70",petok:"b533a35ed34b0881ef4a0af0266f370f3f414e0c-1465547661-1800",zone:"igetdorm.com",rocket:"0",apps:{"ga_key":{"ua":"UA-75589316-1","ga_bs":"2"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+        try {
+            if (!window.CloudFlare) {
+                var CloudFlare = [{
+                    verbose: 0,
+                    p: 1465369791,
+                    byc: 0,
+                    owlid: "cf",
+                    bag2: 1,
+                    mirage2: 0,
+                    oracle: 0,
+                    paths: {cloudflare: "/cdn-cgi/nexp/dok3v=1613a3a185/"},
+                    atok: "8d1a3b21ed3ea9d1d47bab05d4408d70",
+                    petok: "b533a35ed34b0881ef4a0af0266f370f3f414e0c-1465547661-1800",
+                    zone: "igetdorm.com",
+                    rocket: "0",
+                    apps: {"ga_key": {"ua": "UA-75589316-1", "ga_bs": "2"}},
+                    sha2test: 0
+                }];
+                !function (a, b) {
+                    a = document.createElement("script"), b = document.getElementsByTagName("script")[0], a.async = !0, a.src = "//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js", b.parentNode.insertBefore(a, b)
+                }()
+            }
+        } catch (e) {
+        }
+        ;
         //]]>
     </script>
     <script type="text/javascript">/* CloudFlare analytics upgrade */
@@ -55,13 +78,45 @@
         _gaq.push(['_setAccount', 'UA-75589316-1']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
 
-        (function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+        (function (b) {
+            (function (a) {
+                "__CF" in b && "DJS" in b.__CF ? b.__CF.DJS.push(a) : "addEventListener" in b ? b.addEventListener("load", a, !1) : b.attachEvent("onload", a)
+            })(function () {
+                "FB" in b && "Event" in FB && "subscribe" in FB.Event && (FB.Event.subscribe("edge.create", function (a) {
+                    _gaq.push(["_trackSocial", "facebook", "like", a])
+                }), FB.Event.subscribe("edge.remove", function (a) {
+                    _gaq.push(["_trackSocial", "facebook", "unlike", a])
+                }), FB.Event.subscribe("message.send", function (a) {
+                    _gaq.push(["_trackSocial", "facebook", "send", a])
+                }));
+                "twttr" in b && "events" in twttr && "bind" in twttr.events && twttr.events.bind("tweet", function (a) {
+                    if (a) {
+                        var b;
+                        if (a.target && a.target.nodeName == "IFRAME")a:{
+                            if (a = a.target.src) {
+                                a = a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);
+                                b = 0;
+                                for (var c; c = a[b]; ++b)if (c.indexOf("url") === 0) {
+                                    b = unescape(c.split("=")[1]);
+                                    break a
+                                }
+                            }
+                            b = void 0
+                        }
+                        _gaq.push(["_trackSocial", "twitter", "tweet", b])
+                    }
+                })
+            })
+        })(window);
         /* ]]> */
     </script>
 </head>
@@ -235,7 +290,8 @@
 
                                                 <input type="text" class="form-control txt input-lg text-center zone"
                                                        style="color: #828282;  max-width: 50%; border-radius: 0px; background-color: white; cursor:pointer"
-                                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly >
+                                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก"
+                                                       readonly>
 
                                                 <select class="form-control txtb input-lg"
                                                         style="max-width: 50%; border-radius: 0px; background-color: white; color:#828282 ; ">
@@ -265,9 +321,10 @@
                                        value="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" readonly>
                                 <input type="text" class="form-control txt input-lg text-center zone"
                                        style="color: #828282;  max-width: 20%; border-radius: 0px; cursor:pointer; background-color: white"
-                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly  >
+                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly>
 
-                                <select class="form-control txtb input-lg" style="max-width: 20%; border-radius: 0px; color: #828282;">
+                                <select class="form-control txtb input-lg"
+                                        style="max-width: 20%; border-radius: 0px; color: #828282;">
                                     <option>ราคา</option>
                                     <option>1000-2000</option>
                                     <option>2000-3000</option>
@@ -300,64 +357,70 @@
                 <h4 class="modal-title" id="modalZoneLabel">โซนหอพัก</h4>
             </div>
 
-                <div class="modal-body">
-                    <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/2000x2000/75f2fb5e44f025bec3f43f00735058ae/map-edited.png" style="width: 100%" alt="Planets" usemap="#planetmap">
+            <div class="modal-body">
+                <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/2000x2000/75f2fb5e44f025bec3f43f00735058ae/map-edited.png"
+                     style="width: 100%" alt="Planets" usemap="#planetmap">
 
-                    <map name="planetmap">
-                        <area shape="rect" coords="133,215,215,243" alt="Sun" class="z1" data-toggle="tooltip" data-placement="bottom" title="เกกี" >
-                        <area shape="rect" coords="133,158,215,186" alt="Sun" class="z2" data-toggle="tooltip" data-placement="bottom" title="RNP" >
-                        <area shape="rect" coords="234,431,315,471" alt="Sun" class="z3" data-toggle="tooltip" data-placement="bottom" title="จินดา" >
-                        <area shape="rect" coords="87,431,169,472" alt="Sun" class="z4" data-toggle="tooltip" data-placement="bottom" title="Avion" >
-                        <area shape="rect" coords="457,204,516,246" alt="Sun" class="z5" data-toggle="tooltip" data-placement="bottom" title="i Place" >
-                        <area shape="rect" coords="231,372,311,412" alt="Sun" class="z6" data-toggle="tooltip" data-placement="bottom" title="FBT" >
-                        <area shape="rect" coords="133,190,215,212" alt="Sun" class="z7" data-toggle="tooltip" data-placement="bottom" title="Workpoint" >
-                    </map>
-                </div>
+                <map name="planetmap">
+                    <area shape="rect" coords="133,215,215,243" class="z1" data-toggle="tooltip" data-placement="bottom"
+                          title="เกกี">
+                    <area shape="rect" coords="133,158,215,186" class="z2" data-toggle="tooltip" data-placement="bottom"
+                          title="RNP">
+                    <area shape="rect" coords="234,431,315,471" class="z3" data-toggle="tooltip" data-placement="bottom"
+                          title="จินดา">
+                    <area shape="rect" coords="87,431,169,472" class="z4" data-toggle="tooltip" data-placement="bottom"
+                          title="Avion">
+                    <area shape="rect" coords="457,204,516,246" class="z5" data-toggle="tooltip" data-placement="bottom"
+                          title="i Place">
+                    <area shape="rect" coords="231,372,311,412" class="z6" data-toggle="tooltip" data-placement="bottom"
+                          title="FBT">
+                    <area shape="rect" coords="133,190,215,212" class="z7" data-toggle="tooltip" data-placement="bottom"
+                          title="Workpoint">
+                </map>
+            </div>
         </div>
     </div>
 </div>
 
 
-
 <script>
     $('.z1').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('เกกี');
             });
     $('.z2').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('RNP');
             });
     $('.z3').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('จินดา');
             });
     $('.z4').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('Avion');
             });
     $('.z5').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('i Place');
             });
     $('.z6').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('FBT');
             });
     $('.z7').click(
-            function(){
+            function () {
                 $('#modalZone').modal('toggle');
                 $('.zone').val('Workpoint');
             });
     $('area').tooltip();
 </script>
-
 
 
 </body>
