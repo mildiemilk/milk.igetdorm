@@ -29,12 +29,17 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+            <state relative-caret-position="465">
+              <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
+=======
+<<<<<<< HEAD
             <state relative-caret-position="2720">
               <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
 =======
             <state relative-caret-position="225">
               <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
 >>>>>>> e88f8f4815555b9838d1945eb385cb02c2ab896f
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
               <folding>
                 <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,8 +63,13 @@
       <file leaf-file-name="css1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/css1.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="15">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="29" />
+=======
             <state relative-caret-position="17">
               <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
               <folding />
             </state>
           </provider>
@@ -245,21 +255,29 @@
       <workItem from="1465299318210" duration="5076000" />
       <workItem from="1465359402122" duration="35769000" />
 <<<<<<< HEAD
+      <workItem from="1465454668150" duration="11944000" />
+=======
+<<<<<<< HEAD
       <workItem from="1465454668150" duration="8855000" />
       <workItem from="1465531210328" duration="10000" />
       <workItem from="1465532423621" duration="3182000" />
 =======
       <workItem from="1465454668150" duration="10313000" />
 >>>>>>> e88f8f4815555b9838d1945eb385cb02c2ab896f
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="56378000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="56481000" />
 =======
     <option name="totallyTimeSpent" value="54747000" />
 >>>>>>> e88f8f4815555b9838d1945eb385cb02c2ab896f
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -564,8 +582,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/css1.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="3" column="739" selection-start-line="3" selection-start-column="739" selection-end-line="3" selection-end-column="739" />
+=======
         <state relative-caret-position="17">
           <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
           <folding />
         </state>
       </provider>
@@ -573,12 +604,17 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+        <state relative-caret-position="465">
+          <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
+=======
+<<<<<<< HEAD
         <state relative-caret-position="2720">
           <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
 =======
         <state relative-caret-position="225">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
 >>>>>>> e88f8f4815555b9838d1945eb385cb02c2ab896f
+>>>>>>> 0cb033ae7583a20d3d3f5fb19f504e433099a30d
           <folding>
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
