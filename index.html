@@ -264,7 +264,7 @@
                                        value="พระจอมเกล้าลาดกระบัง" readonly>
                                 <input type="text" class="form-control txt input-lg text-center zone"
                                        style="color: #828282;  max-width: 20%; border-radius: 0px;"
-                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" >
+                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly >
 
                                 <select class="form-control txtb input-lg" style="max-width: 25%; border-radius: 0px;">
                                     <option>ราคา</option>
@@ -303,16 +303,19 @@
                     <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/2000x2000/4443fd11a5477208f89eb88d493aed0b/map.png" style="width: 100%" alt="Planets" usemap="#planetmap">
 
                     <map name="planetmap">
-                        <area shape="rect" coords="0,0,82,126" alt="Sun" class="z1" >
+                        <area shape="rect" coords="133,158,215,186" alt="Sun" class="z2"  >
+                        <area shape="rect" coords="133,190,215,212" alt="Sun" class="z7"  >
+                        <area shape="rect" coords="133,215,215,243" alt="Sun" class="z1"  >
+                        <area shape="rect" coords="231,372,311,412" alt="Sun" class="z6"  >
+                        <area shape="rect" coords="231,372,311,412" alt="Sun" class="z6"  >
+                        <area shape="rect" coords="87,431,169,472" alt="Sun" class="z4"  >
+                        <area shape="rect" coords="234,431,315,471" alt="Sun" class="z3"  >
+                        <area shape="rect" coords="457,204,516,246" alt="Sun" class="z5"  >
+
 
                     </map>
                 </div>
-                <!--<div class="list-group">-->
-                    <!--<button type="button" class="list-group-item z1">เกกี</button>-->
-                    <!--<button type="button" class="list-group-item z2">RNP</button>-->
-                    <!--<button type="button" class="list-group-item z3">จินดา</button>-->
-                    <!--<button type="button" class="list-group-item z4">ริมสวน</button>-->
-                <!--</div>-->
+
 
         </div>
     </div>
@@ -321,26 +324,43 @@
 
 
 <script>
-    $('.z1').focus(
+    $('.z1').click(
             function(){
                 $('#modalZone').modal('toggle');
                 $('.zone').val('เกกี');
             });
-    $('.z2').focus(
+    $('.z2').click(
             function(){
                 $('#modalZone').modal('toggle');
                 $('.zone').val('RNP');
             });
-    $('.z3').focus(
+    $('.z3').click(
             function(){
                 $('#modalZone').modal('toggle');
                 $('.zone').val('จินดา');
             });
-    $('.z4').focus(
+    $('.z4').click(
             function(){
                 $('#modalZone').modal('toggle');
-                $('.zone').val('ริมสวน');
+                $('.zone').val('Avion');
             });
+    $('.z5').click(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('iplace');
+            });
+    $('.z6').click(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('FBT');
+            });
+    $('.z7').click(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('Workpoint');
+            });
+
+
 </script>
 
 
