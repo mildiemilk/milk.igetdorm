@@ -305,15 +305,22 @@
                     <span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="modalZoneLabel">โซนหอพัก</h4>
             </div>
-            <div class="modal-body">
-                <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/2000x2000/4443fd11a5477208f89eb88d493aed0b/map.png" class="img-responsive">
+
+                <div class="modal-body">
+                    <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/2000x2000/4443fd11a5477208f89eb88d493aed0b/map.png" style="width: 100%" alt="Planets" usemap="#planetmap">
+
+                    <map name="planetmap">
+                        <area shape="rect" coords="0,0,82,126" alt="Sun" class="z1" >
+
+                    </map>
+                </div>
                 <!--<div class="list-group">-->
                     <!--<button type="button" class="list-group-item z1">เกกี</button>-->
                     <!--<button type="button" class="list-group-item z2">RNP</button>-->
                     <!--<button type="button" class="list-group-item z3">จินดา</button>-->
                     <!--<button type="button" class="list-group-item z4">ริมสวน</button>-->
                 <!--</div>-->
-            </div>
+
         </div>
     </div>
 </div>
@@ -342,6 +349,9 @@
                 $('.zone').val('ริมสวน');
             });
 </script>
+
+
+
 
 
 
