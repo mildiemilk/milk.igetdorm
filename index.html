@@ -285,9 +285,10 @@
                                 <input type="text" class="form-control txt input-lg"
                                        style="color: #828282;  max-width: 40%; border-radius: 0px;"
                                        value="พระจอมเกล้าลาดกระบัง" readonly>
-                                <input type="text" class="form-control txt input-lg text-center"
+                                <input type="text" class="form-control txt input-lg text-center zone"
                                        style="color: #828282;  max-width: 20%; border-radius: 0px;"
-                                       value="โซนหอพัก" >
+                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" >
+
                                 <select class="form-control txtb input-lg" style="max-width: 25%; border-radius: 0px;">
                                     <option>ราคา</option>
                                     <option>1000-2000</option>
@@ -305,10 +306,58 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalZone" tabindex="-1" role="dialog"
+     aria-labelledby="modalZoneLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modalZoneLabel">โซนหอพัก</h4>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <button type="button" class="list-group-item z1">เกกี</button>
+                    <button type="button" class="list-group-item z2">RNP</button>
+                    <button type="button" class="list-group-item z3">จินดา</button>
+                    <button type="button" class="list-group-item z4">ริมสวน</button>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.z1').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('เกกี');
+            });
+    $('.z2').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('RNP');
+            });
+    $('.z3').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('จินดา');
+            });
+    $('.z4').focus(
+            function(){
+                $('#modalZone').modal('toggle');
+                $('.zone').val('ริมสวน');
+            });
+</script>
 
 </body>
 </html>
