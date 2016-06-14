@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="https://www.igetdorm.com/public/css/card.min.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
     <script type="text/javascript">
         //<![CDATA[
         try {
@@ -354,19 +355,19 @@
                      style="width: 100%" alt="Planets" usemap="#planetmap">
 
                 <map name="planetmap">
-                    <area shape="rect" coords="133,100,214,126" class="z1 " data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="204,153,328,194" class="z1 "
                           title="เกกี">
-                    <area shape="rect" coords="133,43,214,70" class="z2" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="204,66,328,108" class="z2"
                           title="RNP">
-                    <area shape="rect" coords="233,316,315,356" class="z3" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="358,482,482,545" class="z3"
                           title="จินดา">
-                    <area shape="rect" coords="87,316,169,356" class="z4" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="133,484,258,544" class="z4"
                           title="Avion">
-                    <area shape="rect" coords="456,88,516,130" class="z5" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="699,137,790,199" class="z5"
                           title="i Place">
-                    <area shape="rect" coords="231,255,311,295" class="z6" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="353,391,476,453" class="z6"
                           title="FBT">
-                    <area shape="rect" coords="133,74,214,96" class="z7" data-toggle="tooltip" data-placement="bottom"
+                    <area shape="rect" coords="204,113,328,148" class="z7"
                           title="Workpoint">
                 </map>
 
@@ -414,9 +415,14 @@
             });
     $('area').tooltip();
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+
+    $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+
+        $('area').on('click', function() {
+            alert($(this).attr('alt') + ' clicked');
+        });
+    });
 </script>
 
 
