@@ -14,6 +14,7 @@
     <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+
     <link href="https://www.igetdorm.com/public/css/font.css" rel="stylesheet">
     <!-- Font Awesome StyleSheet CSS -->
     <link href="https://www.igetdorm.com/public/css/font-awesome.min.css" rel="stylesheet">
@@ -121,11 +122,12 @@
     </script>
 </head>
 <body style="background-color: #efefef;">
+<!--style="top: 10%; left: 1%; position: absolute"-->
 
 <div class="kode_wrapper">
     <!-- register Modal -->
     <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
-        <div class="modal-dialog" style="top: 10%">
+        <div class="modal-dialog" style="top: 10%; left: 1%; position: absolute">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>
             <div class="modal-content">
@@ -133,7 +135,7 @@
                 <div class="user-box">
                     <h2>สมัครสมาชิก</h2>
                     <form method="post" action="https://www.igetdorm.com/register" accept-charset="UTF-8" role="form">
-                        <input type="hidden" name="_token" value="W7buJc6W2cLZLfih34gBRuNZIETndkFgL3q6FEI5">
+                        <input type="hidden" name="_token" value="aLbgO6XXifJGzh95n2OHg0qGSeogHtURAQ8V2d6g">
                         <div class="form">
 
                             <div class="input-container">
@@ -176,14 +178,14 @@
 
     <!-- SIGNIN MODEL START -->
     <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="top: 10%; left: 1%; position: absolute">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>
             <div class="modal-content">
                 <div class="user-box">
                     <h2>เข้าสู่ระบบ</h2>
                     <form method="post" action="https://www.igetdorm.com/login" accept-charset="UTF-8" role="form">
-                        <input type="hidden" name="_token" value="W7buJc6W2cLZLfih34gBRuNZIETndkFgL3q6FEI5">
+                        <input type="hidden" name="_token" value="aLbgO6XXifJGzh95n2OHg0qGSeogHtURAQ8V2d6g">
                         <div class="form">
                             <div class="input-container">
                                 <input name="email" type="email" placeholder="อีเมล" required>
@@ -266,7 +268,8 @@
                                        style="color: #828282;  max-width: 70%; border-radius: 0px; background-color: white"
                                        value="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" readonly>
 
-                                <button type="button" class="btn btn-primary txt text-center btn-lg" data-toggle="modal"
+                                <button type="button" class="btn btn-primary txt text-center btn-lg"
+                                        data-toggle="modal"
                                         data-target="#myModal"
                                         style="color: white;  min-width: 30%; background-color: #3b97d3; border-radius: 0px">
                                     ค้นหา
@@ -288,9 +291,10 @@
                                                        style="color: #828282;  max-width: 100%; border-radius: 0px; background-color: white"
                                                        value="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" readonly>
 
-                                                <input type="text" class="form-control txt input-lg text-center zone"
-                                                       style="color: #828282;  max-width: 50%; border-radius: 0px; cursor:pointer"
-                                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly >
+                                                <input type="text"
+                                                       class="form-control txt input-lg text-center zone"
+                                                       style="color: #828282; max-width: 50%; border-radius: 0px; cursor:pointer"
+                                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly>
 
                                                 <select class="form-control txtb input-lg"
                                                         style="max-width: 50%; border-radius: 0px; background-color: white; color:#828282 ; ">
@@ -319,8 +323,19 @@
                                        style="color: #828282;  max-width: 60%; border-radius: 0px; background-color: white"
                                        value="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" readonly>
                                 <input type="text" class="form-control txt input-lg text-center zone"
-                                       style="color: #828282;  max-width: 20%; border-radius: 0px; cursor:pointer;"
-                                       data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly  >
+                                <<<<<<< HEAD
+                                style="color: #828282; max-width: 20%; border-radius: 0px; cursor:pointer;"
+                                data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly >
+                                =======
+                                <<<<<<< HEAD
+                                style="color: #828282; max-width: 20%; border-radius: 0px; cursor:pointer;
+                                background-color: white"
+                                data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly>
+                                =======
+                                style="color: #828282; max-width: 20%; border-radius: 0px; cursor:pointer;"
+                                data-toggle="modal" data-target="#modalZone" value="โซนหอพัก" readonly >
+                                >>>>>>> c3409e3d857e4fb863f06bfd947445d6ed4fbd59
+                                >>>>>>> abd8784bbfaef39f700489c4d3694ff85c99791e
 
                                 <select class="form-control txtb input-lg"
                                         style="max-width: 20%; border-radius: 0px; color: #828282;">
