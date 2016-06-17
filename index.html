@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" href="https://www.igetdorm.com/public/images/favicon/favicon.png">
     <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
     <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 
     <link href="https://www.igetdorm.com/public/css/font.css" rel="stylesheet">
@@ -47,7 +47,8 @@
     <link rel="stylesheet" href="https://www.igetdorm.com/public/css/card.min.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="jquery.rwdImageMaps.min.js"></script>
+    <script src="js/imageMapResizer.js"></script>
+
     <script type="text/javascript">
         //<![CDATA[
         try {
@@ -352,23 +353,16 @@
 
             <div class="modal-body modal-lg">
                 <img src="https://trello-attachments.s3.amazonaws.com/57593102e93e4ad1941a9a13/1999x1397/ecfaa6d4229525a29ced42a74b32ff25/map-edited2.png"
-                     style="width: 100%" alt="Planets" usemap="#planetmap">
+                     style="border: none; height: auto; max-width: 100%; width: auto;" width="870" height="608" alt="Planets" usemap="#planetmap">
 
                 <map name="planetmap">
-                    <area shape="rect" coords="204,153,328,194" class="z1 "
-                          title="เกกี">
-                    <area shape="rect" coords="204,66,328,108" class="z2"
-                          title="RNP">
-                    <area shape="rect" coords="358,482,482,545" class="z3"
-                          title="จินดา">
-                    <area shape="rect" coords="133,484,258,544" class="z4"
-                          title="Avion">
-                    <area shape="rect" coords="699,137,790,199" class="z5"
-                          title="i Place">
-                    <area shape="rect" coords="353,391,476,453" class="z6"
-                          title="FBT">
-                    <area shape="rect" coords="204,113,328,148" class="z7"
-                          title="Workpoint">
+                    <area shape="rect" coords="469,354,754,449" class="z1" title="เกกี">
+                    <area shape="rect" coords="469,152,754,250" class="z2" title="RNP">
+                    <area shape="rect" coords="821,1110,1107,1255" class="z3" title="จินดา">
+                    <area shape="rect" coords="306,1113,593,1254" class="z4" title="Avion">
+                    <area shape="rect" coords="1608,315,1817,459" class="z5" title="i Place">
+                    <area shape="rect" coords="812,900,1095,1043" class="z6" title="FBT">
+                    <area shape="rect" coords="469,262,754,341" class="z7" title="Workpoint">
                 </map>
 
             </div>
@@ -413,15 +407,9 @@
                 $('#modalZone').modal('toggle');
                 $('.zone').val('Workpoint');
             });
-    $('area').tooltip();
 
-
-    $(document).ready(function(e) {
-        $('img[usemap]').rwdImageMaps();
-
-        $('area').on('click', function() {
-            alert($(this).attr('alt') + ' clicked');
-        });
+    $(document).ready(function() {
+        $('map').imageMapResize();
     });
 </script>
 
